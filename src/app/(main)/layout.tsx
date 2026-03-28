@@ -27,7 +27,7 @@ export default function Option1Layout({ children }: { children: React.ReactNode 
       {/* HEADER */}
       <header className="sticky top-0 z-[100] bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-100 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-32 flex items-center justify-between w-full">
-          <Link href="/option-1" className="flex items-center gap-2 sm:gap-4 relative z-[100] flex-1 min-w-0 pr-1">
+          <Link href="/" className="flex items-center gap-2 sm:gap-4 relative z-[100] flex-1 min-w-0 pr-1">
             <div className="relative w-20 h-20 sm:w-28 sm:h-28 shrink-0">
                <Image src="/images/logo.png" alt="לוגו התוכנית" fill className="object-contain" priority />
             </div>
@@ -37,17 +37,17 @@ export default function Option1Layout({ children }: { children: React.ReactNode 
             </div>
           </Link>
           <nav className="hidden lg:flex flex-1 justify-center gap-4 xl:gap-8 text-[#4a5568] font-medium text-base xl:text-lg mx-6">
-            <Link href="/option-1" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] text-center leading-tight whitespace-normal break-words">דף הבית</Link>
-            <Link href="/option-1/about" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] text-center leading-tight whitespace-normal break-words">אודות</Link>
-            <Link href="/option-1/lessons" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] text-center leading-tight whitespace-normal break-words">השיעורים שלנו</Link>
-            <Link href="/option-1/testimonials" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] xl:max-w-[120px] text-center leading-tight whitespace-normal break-words">המלצות מהורים</Link>
-            <Link href="/option-1/contact" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] text-center leading-tight whitespace-normal break-words">יצירת קשר</Link>
+            <Link href="/" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] text-center leading-tight whitespace-normal break-words">דף הבית</Link>
+            <Link href="/about" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] text-center leading-tight whitespace-normal break-words">אודות</Link>
+            <Link href="/lessons" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] text-center leading-tight whitespace-normal break-words">השיעורים שלנו</Link>
+            <Link href="/testimonials" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] xl:max-w-[120px] text-center leading-tight whitespace-normal break-words">המלצות מהורים</Link>
+            <Link href="/contact" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] text-center leading-tight whitespace-normal break-words">יצירת קשר</Link>
           </nav>
           <div className="hidden md:flex gap-4 shrink-0">
             <a href="tel:052-6113093" className="flex items-center gap-2 text-[#8aab9f] hover:text-[#729286] font-bold transition-colors whitespace-nowrap">
               <Phone size={20} /> אלינו: 052-6113093
             </a>
-            <Link href="/option-1/contact" className="bg-[#8aab9f] hover:bg-[#729286] text-white px-6 py-2 rounded-full font-bold transition-colors shadow-md hover:shadow-lg whitespace-nowrap">
+            <Link href="/contact" className="bg-[#8aab9f] hover:bg-[#729286] text-white px-6 py-2 rounded-full font-bold transition-colors shadow-md hover:shadow-lg whitespace-nowrap">
               צרו קשר
             </Link>
           </div>
@@ -80,10 +80,10 @@ export default function Option1Layout({ children }: { children: React.ReactNode 
           <div className="space-y-6 text-right">
             <h4 className="text-xl font-bold !text-gray-100 border-b border-gray-500 pb-2 inline-block">ניווט מהיר</h4>
             <ul className="space-y-4 !text-gray-200">
-              <li><Link href="/option-1" className="!text-gray-200 underline hover:!text-white transition-colors">דף הבית</Link></li>
-              <li><Link href="/option-1/about" className="!text-gray-200 underline hover:!text-white transition-colors">אודות</Link></li>
-              <li><Link href="/option-1/lessons" className="!text-gray-200 underline hover:!text-white transition-colors">השיעורים שלנו</Link></li>
-              <li><Link href="/option-1/testimonials" className="!text-gray-200 underline hover:!text-white transition-colors">המלצות מהורים</Link></li>
+              <li><Link href="/" className="!text-gray-200 underline hover:!text-white transition-colors">דף הבית</Link></li>
+              <li><Link href="/about" className="!text-gray-200 underline hover:!text-white transition-colors">אודות</Link></li>
+              <li><Link href="/lessons" className="!text-gray-200 underline hover:!text-white transition-colors">השיעורים שלנו</Link></li>
+              <li><Link href="/testimonials" className="!text-gray-200 underline hover:!text-white transition-colors">המלצות מהורים</Link></li>
             </ul>
           </div>
 
@@ -103,7 +103,7 @@ export default function Option1Layout({ children }: { children: React.ReactNode 
                 <span className="font-semibold !text-gray-200">החרושת 11, רמת השרון</span>
               </div>
             </div>
-            <Link href="/option-1/contact" className="inline-block mt-6 bg-white text-[#1f2937] px-8 py-3.5 rounded-full font-bold hover:bg-gray-100 transition-all shadow-md hover:shadow-lg w-full text-center">
+            <Link href="/contact" className="inline-block mt-6 bg-white text-[#1f2937] px-8 py-3.5 rounded-full font-bold hover:bg-gray-100 transition-all shadow-md hover:shadow-lg w-full text-center">
               השאירו פרטים ונחזור אליכם
             </Link>
           </div>
@@ -113,7 +113,7 @@ export default function Option1Layout({ children }: { children: React.ReactNode 
           <div className="text-center !text-gray-300 font-bold text-base flex flex-col sm:flex-row items-center justify-center gap-2 mb-8">
             <p className="!text-gray-300">© {new Date().getFullYear()} כל הזכויות שמורות ל&quot;הבית שלך להצלחה&quot; - המרכז להוראה מותאמת.</p>
             <span className="hidden sm:inline !text-gray-300">|</span>
-            <Link href="/option-1/terms" className="!text-gray-200 underline hover:!text-white transition-colors underline-offset-4 font-bold">תקנון ומדיניות פרטיות</Link>
+            <Link href="/terms" className="!text-gray-200 underline hover:!text-white transition-colors underline-offset-4 font-bold">תקנון ומדיניות פרטיות</Link>
           </div>
           
           {/* SOCIAL ICONS - macOS Premium Style */}

@@ -22,10 +22,10 @@ export default function Option1Home() {
               לאפשר לו לזהות את עוצמותיו וחוזקותיו על מנת למצות את הפוטנציאל הטמון בו תוך למידה משמעותית, ערכית וחוויתית
             </p>
             <div className="pt-8 flex flex-wrap gap-4">
-              <Link href="/option-1/contact" className="bg-[#e6b3a6] hover:bg-[#d48c77] text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md hover:shadow-lg hover:-translate-y-1">
+              <Link href="/contact" className="bg-[#e6b3a6] hover:bg-[#d48c77] text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md hover:shadow-lg hover:-translate-y-1">
                 התקשרו עכשיו לתיאום
               </Link>
-              <Link href="/option-1/lessons" className="bg-white hover:bg-gray-50 text-[#4a5568] border-2 border-transparent px-8 py-4 rounded-full font-bold text-lg transition-all shadow-sm hover:shadow-md hover:border-[#8aab9f]">
+              <Link href="/lessons" className="bg-white hover:bg-gray-50 text-[#4a5568] border-2 border-transparent px-8 py-4 rounded-full font-bold text-lg transition-all shadow-sm hover:shadow-md hover:border-[#8aab9f]">
                 לשיעורים שלנו
               </Link>
             </div>
@@ -107,7 +107,7 @@ export default function Option1Home() {
             <p className="text-xl text-[#4a5568] leading-relaxed">
               הצטרפו ל"בית שלך להצלחה" ותנו לילדכם מעטפת לימודית ורגשית מלאה, הממוקדת בחוויית למידה חיובית וצבירת ניצחונות קטנים שמעצבים את החוסן הנפשי והידע האקדמי.
             </p>
-            <Link href="/option-1/about" className="inline-block bg-white text-[#8aab9f] px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-50 shadow-md border border-[#8aab9f]/20 transition-all">
+            <Link href="/about" className="inline-block bg-white text-[#8aab9f] px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-50 shadow-md border border-[#8aab9f]/20 transition-all">
               הכירו את צוות המורים שלנו
             </Link>
           </div>
@@ -145,7 +145,7 @@ export default function Option1Home() {
             </div>
           </div>
           <div className="text-center mt-12">
-            <Link href="/option-1/testimonials" className="inline-block bg-white text-[#d48c77] border-2 border-[#e6b3a6] px-8 py-3 rounded-full font-bold hover:bg-[#fff9f8] transition-colors">
+            <Link href="/testimonials" className="inline-block bg-white text-[#d48c77] border-2 border-[#e6b3a6] px-8 py-3 rounded-full font-bold hover:bg-[#fff9f8] transition-colors">
               לכל ההמלצות
             </Link>
           </div>
@@ -158,7 +158,7 @@ export default function Option1Home() {
           <h2 className="text-4xl font-bold text-[#2d3748]">מוכנים לצאת לדרך משותפת?</h2>
           <p className="text-xl text-[#4a5568]">צרו איתנו קשר כבר היום לקביעת פגישת אבחון והיכרות כדי להתחיל במלאכה.</p>
           <div className="flex justify-center gap-6">
-            <Link href="/option-1/contact" className="bg-[#8aab9f] hover:bg-[#729286] text-white px-10 py-4 rounded-full font-bold text-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+            <Link href="/contact" className="bg-[#8aab9f] hover:bg-[#729286] text-white px-10 py-4 rounded-full font-bold text-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
               צרו קשר עכשיו
             </Link>
           </div>

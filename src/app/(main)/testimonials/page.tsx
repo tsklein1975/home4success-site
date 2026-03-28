@@ -58,7 +58,7 @@ export default function Option1Testimonials() {
       
       <section className="py-20 bg-white text-center">
         <h2 className="text-3xl font-bold text-[#2d3748] mb-8">רוצים לשמוע עוד?</h2>
-        <Link href="/option-1/contact" className="inline-block bg-[#e6b3a6] hover:bg-[#d48c77] text-white px-10 py-4 rounded-full text-xl font-bold shadow-md hover:-translate-y-1 transition-transform">
+        <Link href="/contact" className="inline-block bg-[#e6b3a6] hover:bg-[#d48c77] text-white px-10 py-4 rounded-full text-xl font-bold shadow-md hover:-translate-y-1 transition-transform">
           בואו נדבר
         </Link>
       </section>

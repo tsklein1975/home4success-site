@@ -100,11 +100,11 @@ export default function MobileMenu() {
             onPointerDown={(e) => e.stopPropagation()}
           >
             {[
-              { href: '/option-1', label: 'דף הבית' },
-              { href: '/option-1/about', label: 'אודות' },
-              { href: '/option-1/lessons', label: 'השיעורים שלנו' },
-              { href: '/option-1/testimonials', label: 'המלצות מהורים' },
-              { href: '/option-1/contact', label: 'יצירת קשר' },
+              { href: '/', label: 'דף הבית' },
+              { href: '/about', label: 'אודות' },
+              { href: '/lessons', label: 'השיעורים שלנו' },
+              { href: '/testimonials', label: 'המלצות מהורים' },
+              { href: '/contact', label: 'יצירת קשר' },
             ].map(({ href, label }) => (
               <Link
                 key={href}

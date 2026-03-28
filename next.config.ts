@@ -12,6 +12,20 @@ const nextConfig: NextConfig = {
     "192.168.*",
     "172.16.*",
   ],
+  async redirects() {
+    return [
+      {
+        source: '/option-1',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/option-1/:path*',
+        destination: '/:path*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
