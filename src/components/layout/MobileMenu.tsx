@@ -56,8 +56,10 @@ export default function MobileMenu() {
           position: 'relative',
           minWidth: 48,
           minHeight: 48,
+          paddingLeft: 'max(1rem, env(safe-area-inset-left))',
+          paddingRight: 'max(1rem, env(safe-area-inset-right))',
         }}
-        className="lg:hidden flex items-center justify-center w-12 h-12 rounded-xl text-[#8aab9f] hover:bg-gray-50 transition-colors shrink-0 ml-1"
+        className="lg:hidden flex items-center justify-center min-w-[3rem] min-h-[3rem] rounded-xl text-[#8aab9f] hover:bg-gray-50 transition-colors shrink-0 ml-2 py-2"
       >
         {isOpen ? <X size={32} /> : <Menu size={32} />}
       </button>

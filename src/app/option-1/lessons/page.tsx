@@ -14,8 +14,8 @@ export default function Option1Lessons() {
       </section>
 
       {/* PAGE NAVIGATION BANNER */}
-      <div className="sticky top-32 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm py-4">
-        <div className="container mx-auto px-6 flex justify-center gap-3 overflow-x-auto hide-scrollbar">
+      <div className="sticky top-32 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm py-4 hidden md:block">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center gap-3">
           <a href="#private" className="whitespace-nowrap bg-[#fcfaf5] hover:bg-[#8aab9f] hover:text-white text-[#4a5568] px-6 py-2.5 rounded-full font-bold shadow-sm border border-[#8aab9f]/20 transition-all text-sm md:text-base">
             שיעורים פרטיים
           </a>
