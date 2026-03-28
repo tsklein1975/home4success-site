@@ -27,13 +27,13 @@ export default function Option1Layout({ children }: { children: React.ReactNode 
       {/* HEADER */}
       <header className="sticky top-0 z-[100] bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-100 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-32 flex items-center justify-between w-full">
-          <Link href="/option-1" className="flex items-center gap-3 relative z-[100] min-w-0 max-w-[70%] sm:max-w-full">
-            <div className="relative w-20 h-20 sm:w-32 sm:h-32 shrink-0">
+          <Link href="/option-1" className="flex items-center gap-2 sm:gap-3 relative z-[100] flex-1 min-w-0 pr-1">
+            <div className="relative w-20 h-20 sm:w-28 sm:h-28 shrink-0">
                <Image src="/images/logo.png" alt="לוגו התוכנית" fill className="object-contain" priority />
             </div>
             <div className="flex flex-col min-w-0">
-              <span className="font-bold text-xl sm:text-2xl text-[#8aab9f] truncate">הבית שלך להצלחה</span>
-              <span className="text-xs sm:text-sm text-[#4a5568] truncate">גבי קליין - המרכז להוראה מותאמת</span>
+              <span className="font-bold text-xl sm:text-2xl text-[#8aab9f] leading-tight break-words">הבית שלך להצלחה</span>
+              <span className="text-xs sm:text-sm text-[#4a5568] mt-0.5 sm:mt-1 leading-tight break-words">גבי קליין - המרכז להוראה מותאמת</span>
             </div>
           </Link>
           <nav className="hidden lg:flex flex-1 justify-center gap-4 xl:gap-8 text-[#4a5568] font-medium text-base xl:text-lg mx-6">

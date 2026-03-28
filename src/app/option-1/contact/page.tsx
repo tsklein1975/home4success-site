@@ -23,39 +23,39 @@ export default function Option1Contact() {
           <div className="bg-white rounded-[3rem] shadow-xl overflow-hidden flex flex-col lg:flex-row">
             
             {/* Contact Details (Left side visually in LTR, Right side in RTL) */}
-            <div className="lg:w-1/3 bg-[#8aab9f] text-white p-12 flex flex-col justify-between">
+            <div className="lg:w-1/3 bg-[#8aab9f] text-white p-6 sm:p-12 flex flex-col justify-between">
               <div>
                 <h2 className="text-3xl font-bold mb-8">פרטי התקשרות</h2>
                 <div className="space-y-8">
                   <div className="flex items-start gap-4">
-                    <div className="bg-white/20 p-3 rounded-xl mt-1">
+                    <div className="bg-white/20 p-3 rounded-xl mt-1 shrink-0">
                       <Phone size={24} />
                     </div>
-                    <div>
+                    <div className="flex-1 min-w-0">
                       <h3 className="font-bold text-xl mb-1">טלפון</h3>
-                      <a href="tel:052-6113093" className="text-lg hover:underline opacity-90 transition-opacity" dir="ltr">
+                      <a href="tel:052-6113093" className="text-lg hover:underline opacity-90 transition-opacity block text-right whitespace-nowrap" dir="ltr">
                         052-6113093
                       </a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="bg-white/20 p-3 rounded-xl mt-1">
+                    <div className="bg-white/20 p-3 rounded-xl mt-1 shrink-0">
                       <Mail size={24} />
                     </div>
-                    <div>
+                    <div className="flex-1 min-w-0">
                       <h3 className="font-bold text-xl mb-1">אימייל</h3>
-                      <a href="mailto:gabycelnik@gmail.com" className="text-lg hover:underline opacity-90 transition-opacity">
+                      <a href="mailto:gabycelnik@gmail.com" className="text-[15px] sm:text-lg tracking-tight hover:underline opacity-90 transition-opacity block whitespace-nowrap">
                         gabycelnik@gmail.com
                       </a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="bg-white/20 p-3 rounded-xl mt-1">
+                    <div className="bg-white/20 p-3 rounded-xl mt-1 shrink-0">
                       <MapPin size={24} />
                     </div>
-                    <div>
+                    <div className="flex-1 min-w-0">
                       <h3 className="font-bold text-xl mb-1">מיקום</h3>
-                      <p className="text-lg opacity-90">
+                      <p className="text-base sm:text-lg opacity-90 break-words">
                         החרושת 11, רמת השרון
                       </p>
                     </div>
@@ -68,8 +68,8 @@ export default function Option1Contact() {
             </div>
 
             {/* Contact Form (Right side visually in LTR, Left side in RTL) */}
-            <div className="lg:w-2/3 p-12 md:p-16">
-              <h2 className="text-3xl font-bold text-[#2d3748] mb-2">שלחו לנו הודעה</h2>
+            <div className="lg:w-2/3 p-6 sm:p-12 md:p-16">
+              <h2 className="text-3xl font-bold text-[#2d3748] mb-2 break-words">שלחו לנו הודעה</h2>
               <p className="text-[#4a5568] mb-10">נשמח לענות על כל שאלה, לייעץ ולקבוע פגישת היכרות.</p>
               
               <form className="space-y-6" action="mailto:gabycelnik@gmail.com" method="post" encType="text/plain">
