@@ -71,36 +71,36 @@ export default function Option1Layout({ children }: { children: React.ReactNode 
               </div>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-slate-100 mb-1">הבית שלך להצלחה</h3>
-              <p className="text-slate-100 font-semibold text-lg">גבי קליין - המרכז להוראה מותאמת</p>
-              <p className="text-slate-100 font-bold mt-2 text-lg">העצמה. למידה. טיפול.</p>
+              <h3 className="text-xl font-bold !text-gray-100 mb-1">הבית שלך להצלחה</h3>
+              <p className="!text-gray-100 font-semibold text-lg">גבי קליין - המרכז להוראה מותאמת</p>
+              <p className="!text-gray-300 font-bold mt-2 text-lg">העצמה. למידה. טיפול.</p>
             </div>
           </div>
 
           <div className="space-y-6 text-right">
-            <h4 className="text-xl font-bold text-slate-100 border-b border-gray-500 pb-2 inline-block">ניווט מהיר</h4>
-            <ul className="space-y-4 text-slate-200">
-              <li><Link href="/option-1" className="text-slate-200 underline hover:text-white transition-colors">דף הבית</Link></li>
-              <li><Link href="/option-1/about" className="text-slate-200 underline hover:text-white transition-colors">אודות</Link></li>
-              <li><Link href="/option-1/lessons" className="text-slate-200 underline hover:text-white transition-colors">השיעורים שלנו</Link></li>
-              <li><Link href="/option-1/testimonials" className="text-slate-200 underline hover:text-white transition-colors">המלצות מהורים</Link></li>
+            <h4 className="text-xl font-bold !text-gray-100 border-b border-gray-500 pb-2 inline-block">ניווט מהיר</h4>
+            <ul className="space-y-4 !text-gray-200">
+              <li><Link href="/option-1" className="!text-gray-200 underline hover:!text-white transition-colors">דף הבית</Link></li>
+              <li><Link href="/option-1/about" className="!text-gray-200 underline hover:!text-white transition-colors">אודות</Link></li>
+              <li><Link href="/option-1/lessons" className="!text-gray-200 underline hover:!text-white transition-colors">השיעורים שלנו</Link></li>
+              <li><Link href="/option-1/testimonials" className="!text-gray-200 underline hover:!text-white transition-colors">המלצות מהורים</Link></li>
             </ul>
           </div>
 
           <div className="space-y-8 text-right">
-            <h4 className="text-xl font-bold text-slate-100 border-b border-gray-500 pb-2 inline-block">יצירת קשר</h4>
+            <h4 className="text-xl font-bold !text-gray-100 border-b border-gray-500 pb-2 inline-block">יצירת קשר</h4>
             <div className="space-y-5">
-              <a href="tel:052-6113093" className="flex items-center gap-3 text-slate-200 underline hover:text-white transition-colors group">
-                <div className="bg-[#8aab9f] p-2.5 rounded-xl text-white opacity-90 group-hover:opacity-100 transition-opacity"><Phone size={20} /></div>
-                <span className="font-semibold text-lg hover:text-white">052-6113093</span>
+              <a href="tel:052-6113093" className="flex items-center gap-3 !text-gray-200 underline hover:!text-white transition-colors group">
+                <div className="bg-[#8aab9f] p-2.5 rounded-xl !text-white opacity-90 group-hover:opacity-100 transition-opacity"><Phone size={20} /></div>
+                <span className="font-semibold text-lg hover:!text-white">052-6113093</span>
               </a>
-              <a href="mailto:gabycelnik@gmail.com" className="flex items-center gap-3 text-slate-200 underline hover:text-white transition-colors group">
-                <div className="bg-[#e6b3a6] p-2.5 rounded-xl text-white opacity-90 group-hover:opacity-100 transition-opacity"><Mail size={20} /></div>
-                <span className="font-semibold hover:text-white">gabycelnik@gmail.com</span>
+              <a href="mailto:gabycelnik@gmail.com" className="flex items-center gap-3 !text-gray-200 underline hover:!text-white transition-colors group">
+                <div className="bg-[#e6b3a6] p-2.5 rounded-xl !text-white opacity-90 group-hover:opacity-100 transition-opacity"><Mail size={20} /></div>
+                <span className="font-semibold hover:!text-white">gabycelnik@gmail.com</span>
               </a>
-              <div className="flex items-center gap-3 text-slate-200 group">
-                <div className="bg-[#d5968b] p-2.5 rounded-xl text-white opacity-90 group-hover:opacity-100 transition-opacity"><MapPin size={20} /></div>
-                <span className="font-semibold text-slate-200">החרושת 11, רמת השרון</span>
+              <div className="flex items-center gap-3 !text-gray-200 group">
+                <div className="bg-[#d5968b] p-2.5 rounded-xl !text-white opacity-90 group-hover:opacity-100 transition-opacity"><MapPin size={20} /></div>
+                <span className="font-semibold !text-gray-200">החרושת 11, רמת השרון</span>
               </div>
             </div>
             <Link href="/option-1/contact" className="inline-block mt-6 bg-white text-[#1f2937] px-8 py-3.5 rounded-full font-bold hover:bg-gray-100 transition-all shadow-md hover:shadow-lg w-full text-center">
@@ -110,10 +110,10 @@ export default function Option1Layout({ children }: { children: React.ReactNode 
 
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-16 pt-8 border-t border-gray-700 flex flex-col items-center justify-center">
-          <div className="text-center text-slate-300 font-bold text-base flex flex-col sm:flex-row items-center justify-center gap-2 mb-8">
-            <p className="text-slate-300">© {new Date().getFullYear()} כל הזכויות שמורות ל&quot;הבית שלך להצלחה&quot; - המרכז להוראה מותאמת.</p>
-            <span className="hidden sm:inline text-slate-300">|</span>
-            <Link href="/option-1/terms" className="text-slate-200 underline hover:text-white transition-colors underline-offset-4 font-bold">תקנון ומדיניות פרטיות</Link>
+          <div className="text-center !text-gray-300 font-bold text-base flex flex-col sm:flex-row items-center justify-center gap-2 mb-8">
+            <p className="!text-gray-300">© {new Date().getFullYear()} כל הזכויות שמורות ל&quot;הבית שלך להצלחה&quot; - המרכז להוראה מותאמת.</p>
+            <span className="hidden sm:inline !text-gray-300">|</span>
+            <Link href="/option-1/terms" className="!text-gray-200 underline hover:!text-white transition-colors underline-offset-4 font-bold">תקנון ומדיניות פרטיות</Link>
           </div>
           
           {/* SOCIAL ICONS - macOS Premium Style */}
