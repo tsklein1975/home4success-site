@@ -21,7 +21,7 @@ export default function Option1Layout({ children }: { children: React.ReactNode 
   }, []);
 
   return (
-    <div dir="rtl" className="min-h-screen bg-[#FDFDFD] text-[#2d3748] font-sans flex flex-col selection:bg-[#cde0d9] w-full overflow-x-hidden">
+    <div dir="rtl" className="min-h-screen bg-[#FDFDFD] text-[#2d3748] font-sans flex flex-col selection:bg-[#cde0d9] w-full overflow-x-clip">
       <ScrollToTop />
 
       {/* HEADER */}
@@ -41,6 +41,7 @@ export default function Option1Layout({ children }: { children: React.ReactNode 
             <Link href="/about" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] text-center leading-tight whitespace-normal break-words">אודות</Link>
             <Link href="/lessons" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] text-center leading-tight whitespace-normal break-words">השיעורים שלנו</Link>
             <Link href="/testimonials" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] xl:max-w-[120px] text-center leading-tight whitespace-normal break-words">המלצות מהורים</Link>
+            <Link href="/interactive-hub" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] text-center leading-tight whitespace-normal break-words">תרגול</Link>
             <Link href="/contact" className="hover:text-[#8aab9f] transition-colors border-b-2 border-transparent hover:border-[#8aab9f] pb-1 max-w-[100px] text-center leading-tight whitespace-normal break-words">יצירת קשר</Link>
           </nav>
           <div className="hidden md:flex gap-4 shrink-0">
@@ -84,6 +85,7 @@ export default function Option1Layout({ children }: { children: React.ReactNode 
               <li><Link href="/about" className="!text-gray-200 underline hover:!text-white transition-colors">אודות</Link></li>
               <li><Link href="/lessons" className="!text-gray-200 underline hover:!text-white transition-colors">השיעורים שלנו</Link></li>
               <li><Link href="/testimonials" className="!text-gray-200 underline hover:!text-white transition-colors">המלצות מהורים</Link></li>
+              <li><Link href="/interactive-hub" className="!text-gray-200 underline hover:!text-white transition-colors">תרגול</Link></li>
             </ul>
           </div>
 

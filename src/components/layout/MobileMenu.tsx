@@ -104,6 +104,7 @@ export default function MobileMenu() {
               { href: '/about', label: 'אודות' },
               { href: '/lessons', label: 'השיעורים שלנו' },
               { href: '/testimonials', label: 'המלצות מהורים' },
+              { href: '/interactive-hub', label: 'תרגול' },
               { href: '/contact', label: 'יצירת קשר' },
             ].map(({ href, label }) => (
               <Link

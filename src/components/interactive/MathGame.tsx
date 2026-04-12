@@ -43,12 +43,12 @@ const GRADE_QUESTIONS: Record<number, Array<{ text: string; answer: number }>> =
 };
 
 const GRADE_NAMES: Record<number, string> = {
-  1: "כיתה א'",
-  2: "כיתה ב'",
-  3: "כיתה ג'",
-  4: "כיתה ד'",
-  5: "כיתה ה'",
-  6: "כיתה ו'"
+  1: "כִּתָּה א׳",
+  2: "כִּתָּה ב׳",
+  3: "כִּתָּה ג׳",
+  4: "כִּתָּה ד׳",
+  5: "כִּתָּה ה׳",
+  6: "כִּתָּה ו׳"
 };
 
 export default function MathGame() {
@@ -64,7 +64,7 @@ export default function MathGame() {
   if (selectedGrade === null) {
     return (
       <div className="flex flex-col items-center w-full" dir="rtl">
-        <h2 className="text-2xl font-bold text-gray-700 mb-6">לאיזו כיתה עולים?</h2>
+        <h2 className="text-2xl font-bold text-gray-700 mb-6">לְאֵיזוֹ כִּתָּה עוֹלִים?</h2>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-2xl px-4">
           {[1, 2, 3, 4, 5, 6].map(grade => (
             <button
@@ -97,7 +97,7 @@ export default function MathGame() {
     if (num === currentQ.answer) {
       // Success
       setStatus('success');
-      setMsg('כל הכבוד! ⭐😊');
+      setMsg('כָּל הַכָּבוֹד! ⭐😊');
       setStars(s => s + 1);
     } else {
       // Error
@@ -105,9 +105,9 @@ export default function MathGame() {
       setFailedAttempts(newFails);
       setStatus('error');
       if (newFails === 1) {
-        setMsg('כמעט... נסו שוב 😊');
+        setMsg('כִּמְעַט... נַסּוּ שׁוּב 😊');
       } else {
-        setMsg(`התשובה הנכונה היא ${currentQ.answer}`);
+        setMsg(`הַתְּשׁוּבָה הַנְּכוֹנָה הִיא ${currentQ.answer}`);
       }
     }
   };
@@ -137,7 +137,7 @@ export default function MathGame() {
            onClick={() => setSelectedGrade(null)} 
            className="text-gray-500 hover:text-gray-800 font-bold bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-full transition-colors flex items-center gap-2"
          >
-           <span>חזור לבחירת כיתה</span> <span>↩</span>
+           <span>חֲזֹר לִבְחִירַת כִּתָּה</span> <span>↩</span>
          </button>
          
          <div className="flex items-center gap-3">
@@ -165,7 +165,7 @@ export default function MathGame() {
                autoFocus
              />
              <button type="submit" className="bg-[#7ca79b] hover:bg-[#618d7f] text-white px-8 py-3 text-xl font-bold rounded-full shadow-md transition-transform active:scale-95 mt-4">
-               בדוק אותי!
+               בִּדְקוּ אוֹתִי!
              </button>
            </form>
          )}
@@ -180,13 +180,13 @@ export default function MathGame() {
          
          {status === 'success' && (
            <button onClick={nextQuestion} className="mt-6 bg-yellow-400 hover:bg-yellow-500 text-yellow-900 px-8 py-3 text-xl font-bold rounded-full shadow-md transition-transform active:scale-95 bounce">
-             לשאלה הבאה 🚀
+             לַשְּׁאֵלָה הַבָּאָה 🚀
            </button>
          )}
          
          {status === 'error' && failedAttempts >= 2 && (
            <button onClick={nextQuestion} className="mt-4 text-gray-400 hover:text-gray-600 font-medium underline py-2">
-             דלג לשאלה הבאה
+             דַּלְּגוּ לַשְּׁאֵלָה הַבָּאָה
            </button>
          )}
       </div>

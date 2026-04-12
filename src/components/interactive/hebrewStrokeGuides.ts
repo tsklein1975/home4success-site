@@ -91,6 +91,18 @@ const hebrewStrokeGuides: Record<string, HebrewLetterGuide> = {
     ],
   },
 
+  // ─── ח (Chet) — 3 strokes ───
+  'ח': {
+    strokes: [
+      // 1. Top horizontal: right → left
+      { path: 'M 72,26 L 28,26', startX: 72, startY: 26 },
+      // 2. Right vertical: top → bottom
+      { path: 'M 72,26 L 72,76', startX: 72, startY: 26 },
+      // 3. Left vertical: top → bottom
+      { path: 'M 28,26 L 28,76', startX: 28, startY: 26 },
+    ],
+  },
+
   // ─── ט (Tet) — 2 strokes ───
   'ט': {
     strokes: [
@@ -226,18 +238,6 @@ const hebrewStrokeGuides: Record<string, HebrewLetterGuide> = {
       { path: 'M 72,26 L 72,76', startX: 72, startY: 26 },
       // 3. Left leg: starts from top bar, goes down
       { path: 'M 36,26 L 30,76', startX: 36, startY: 26 },
-    ],
-  },
-
-  // ─── ח (Chet) — 3 strokes ───
-  'ח': {
-    strokes: [
-      // 1. Top horizontal: right → left
-      { path: 'M 72,26 L 28,26', startX: 72, startY: 26 },
-      // 2. Right vertical: top → bottom
-      { path: 'M 72,26 L 72,76', startX: 72, startY: 26 },
-      // 3. Left vertical: top → bottom
-      { path: 'M 28,26 L 28,76', startX: 28, startY: 26 },
     ],
   },
 };

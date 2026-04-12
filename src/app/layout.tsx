@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="he" dir="rtl" className={`${heebo.variable} overflow-x-hidden`} suppressHydrationWarning>
-      <body className="font-sans min-h-screen flex flex-col bg-background text-foreground antialiased selection:bg-primary-light selection:text-text-main overflow-x-hidden w-full" suppressHydrationWarning>
+    <html lang="he" dir="rtl" className={`${heebo.variable} overflow-x-clip`} suppressHydrationWarning>
+      <body className="font-sans min-h-screen flex flex-col bg-background text-foreground antialiased selection:bg-primary-light selection:text-text-main overflow-x-clip w-full" suppressHydrationWarning>
         {children}
       </body>
     </html>

@@ -2,11 +2,13 @@
 
 import React, { useState } from 'react';
 import GuidedTracingEngine from './GuidedTracingEngine';
+import WordScrambleGame from './WordScrambleGame';
 import MathGame from './MathGame';
 import { HEBREW_CHARS, ENGLISH_CHARS } from './guidedLetterData';
 
 export default function LearningHub() {
   const [activeTab, setActiveTab] = useState<'he' | 'en' | 'math'>('he');
+  const [hebrewGameType, setHebrewGameType] = useState<'tracing' | 'scramble'>('scramble');
 
   return (
     <div className="min-h-[80vh] flex flex-col bg-[#fef5f1] py-6 md:py-8" dir="rtl">
@@ -15,7 +17,7 @@ export default function LearningHub() {
           למידה אינטראקטיבית
         </h1>
         
-        {/* Tabs */}
+        {/* Main Tabs */}
         <div className="flex justify-center gap-3 md:gap-4 mb-6 flex-wrap">
           <button 
             onClick={() => setActiveTab('he')}
@@ -39,9 +41,31 @@ export default function LearningHub() {
         </div>
 
         {/* Content Container */}
-        <div className="bg-white rounded-[2rem] p-4 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.05)] border border-[#f0ded5] min-h-[400px] w-full max-w-4xl flex justify-center items-start">
+        <div className="bg-white rounded-[2rem] p-4 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.05)] border border-[#f0ded5] min-h-[400px] w-full max-w-4xl flex flex-col items-center justify-start">
           {activeTab === 'he' && (
-            <GuidedTracingEngine title="בחרו אות להתחיל לצייר:" letters={HEBREW_CHARS} lang="he" />
+            <div className="w-full flex flex-col items-center">
+              {/* Hebrew Sub Tabs */}
+              <div className="flex justify-center gap-3 mb-8 bg-gray-100 p-1.5 rounded-full">
+                <button
+                  onClick={() => setHebrewGameType('scramble')}
+                  className={`px-6 py-2 rounded-full font-bold text-lg transition-all ${hebrewGameType === 'scramble' ? 'bg-white text-[#7ca79b] shadow-sm' : 'text-gray-500 hover:text-gray-700'}`}
+                >
+                  אותיות מבולבלות
+                </button>
+                <button
+                  onClick={() => setHebrewGameType('tracing')}
+                  className={`px-6 py-2 rounded-full font-bold text-lg transition-all ${hebrewGameType === 'tracing' ? 'bg-white text-[#7ca79b] shadow-sm' : 'text-gray-500 hover:text-gray-700'}`}
+                >
+                  כתיבת אותיות
+                </button>
+              </div>
+
+              {hebrewGameType === 'tracing' ? (
+                <GuidedTracingEngine title="בחרו אות להתחיל לצייר:" letters={HEBREW_CHARS} lang="he" />
+              ) : (
+                <WordScrambleGame />
+              )}
+            </div>
           )}
           {activeTab === 'en' && (
             <GuidedTracingEngine title="Choose a letter to trace:" letters={ENGLISH_CHARS} lang="en" />
